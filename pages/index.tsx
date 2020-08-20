@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Navbar from '../components/Navbar/Navbar'
 import Link from 'next/link'
 
 const HomePage = () => {
@@ -15,7 +14,6 @@ const HomePage = () => {
 
   return (
     <div>
-      <Navbar />
       <div>Platzi and Next.js!</div>
       {productList.map((product, index) => {
         return (
