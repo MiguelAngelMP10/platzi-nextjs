@@ -33,4 +33,6 @@ Curso de NextJS dictado por [@jonalvarezz](https://twitter.com/jonalvarezz) para
 
     El sitio estará disponible en http://localhost:3000.
 
+    # Para ver el resultado en usar https://platzi-nextjs-nine.vercel.app/
+
     Happy hacking!
