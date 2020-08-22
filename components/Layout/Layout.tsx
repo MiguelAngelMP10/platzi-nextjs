@@ -1,22 +1,21 @@
-import React from 'react'
-import NavBar from '@components/Navbar/Navbar'
-//import style from './layout.module.css'
+import React, { PropsWithChildren } from 'react'
+import { Container } from 'semantic-ui-react'
 
-const Layout: React.FC = ({ children }) => {
-  return (
-    //<div className={style.contaner}>
-    <div className="">
-      <NavBar />
-      {children}
-      <footer className="contaner">This is the footer</footer>
+import Navbar from '@components/Navbar/Navbar'
+import Footer from '@components/Footer/Footer'
 
-      <style jsx>{`
-        .contaner {
-          background-color: red;
-        }
-      `}</style>
-    </div>
-  )
+type LayoutProps = {
+  children?: React.ReactNode
 }
+
+const Layout = ({ children }: LayoutProps) => (
+  <>
+    <Navbar />
+    <Container as="main" text>
+      {children}
+    </Container>
+    <Footer />
+  </>
+)
 
 export default Layout
