@@ -23,7 +23,7 @@ export const getStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const id = params?.id as atring
+  const id = params?.id as string
   const response = await fetch(
     `https://platzi-nextjs-nine.vercel.app/api/avo/${id}`
   )
